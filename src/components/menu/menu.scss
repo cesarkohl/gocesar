@@ -1,3 +1,7 @@
 .menu {
   background-color: yellow;
+
+  @include media("<tablet") {
+    background-color: pink;
+  }
 }
