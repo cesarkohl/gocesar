@@ -1,0 +1,20 @@
+.frontend {
+  display: flex;
+  justify-content: space-between;
+
+  &-text {
+    @include media(">tablet") {
+      flex: 2;
+      padding-right: 100px;
+    }
+  }
+  &-img {
+    display: none;
+
+    @include media(">tablet") {
+      flex: 1;
+      display: initial;
+      max-width: 350px;
+    }
+  }
+}

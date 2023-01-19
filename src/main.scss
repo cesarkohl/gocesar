@@ -20,7 +20,8 @@
 }
 
 main {
-  display: none;
+  flex-direction: column;
+  margin: 0 10px;
 
   @include media(">desktop") {
     display: flex;
