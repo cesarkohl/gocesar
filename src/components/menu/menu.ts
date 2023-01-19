@@ -6,7 +6,7 @@ export const menu = `
         <span>GoCesar</span>
         <img src="/logo.png" class="logo" alt="GoGloby logo" />
     </a>
-    <a class="menu__option menu__option--active" href="#about-me">About me</a>
+    <a class="menu__option" href="#about-me">About me</a>
     <a class="menu__option" href="#frontend">Front-end</a>
     <a class="menu__option" href="#backend">Back-end</a>
     <a class="menu__option" href="#devops">DevOps</a>

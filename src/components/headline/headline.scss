@@ -4,24 +4,27 @@
   justify-content: center;
   padding: 40px 0;
 
-  &-one {
+  &__one {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  &-text {
+
+  &__text {
     @include media(">tablet") {
       flex: 2;
       padding-right: 100px;
     }
   }
-  &-heading {
+
+  &__heading {
     @include media(">tablet") {
       font-size: 55px;
       line-height: 50px;
     }
   }
-  &-paragraph {
+
+  &__paragraph {
     padding-bottom: 20px;
 
     @include media(">tablet") {
@@ -29,17 +32,8 @@
       font-size: 18px;
     }
   }
-  &-button {
-    padding: 12px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--color-gray-light);
-    background-color: var(--color-red);
-    border-radius: 10px;
-    box-sizing: border-box;
-    cursor: pointer;
-  }
-  &-img {
+
+  &__img {
     display: none;
 
     @include media(">tablet") {
@@ -54,31 +48,34 @@
     }
   }
 
-  &-two {
+  &__two {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px 0;
   }
-  &-partnership__paragraph {
+
+  &__partnership-paragraph {
     font-size: 18px;
   }
-  &-partnership__logo {
+
+  &__partnership-logo {
     margin-right: 40px;
   }
-  &-numbers {
+
+  &__numbers {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-self: center;
-    width: 900px;
 
     @include media(">tablet") {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
     }
-    &__card {
+
+    &-card {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -88,13 +85,15 @@
         margin: 50px;
       }
     }
-    &__title {
+
+    &-title {
       align-self: center;
       font-size: 37px;
       font-weight: bolder;
-      color: var(--color-purple);
+      color: var(--color-primary);
     }
-    &__span {
+
+    &-span {
       align-self: center;
       width: 150px;
       text-align: center;
