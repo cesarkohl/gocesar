@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   width: 100%;
 
-  &-logo {
+  &__logo {
     position: relative;
     flex: 1;
 
@@ -24,7 +24,7 @@
     }
   }
 
-  &-option {
+  &__option {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,8 +35,8 @@
     color: var(--color-gray);
 
     &:hover,
-    &__active {
-      color: var(--color-purple);
+    &--active {
+      color: var(--color-primary);
     }
   }
 }

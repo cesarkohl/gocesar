@@ -1,0 +1,38 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  &--reverse {
+    flex-direction: row-reverse;
+
+    .features__text {
+      @include media(">tablet") {
+        padding-left: 100px;
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__text {
+    @include media(">tablet") {
+      flex: 2;
+      padding-right: 100px;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    display: none;
+
+    @include media(">tablet") {
+      flex: 1;
+      display: initial;
+      max-width: 350px;
+    }
+  }
+}
