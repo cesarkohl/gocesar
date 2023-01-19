@@ -1,6 +1,7 @@
 import {menu, toggleActive as menuToggleActive} from './components/menu/menu';
 import {features} from './components/features/features';
 import {testimonials} from "./components/testimonials/testimonials";
+import {contact} from "./components/contact/contact";
 import {footer, goToTop as footerGoToTop} from './components/footer/footer';
 import './main.scss';
 
@@ -69,6 +70,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 "NEVER send a candidate before validating their <b>tech, communication, and culture</b>",
             ],
         })}
+        
+        ${contact}
         
         ${footer}
     </main>

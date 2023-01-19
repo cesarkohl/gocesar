@@ -17,6 +17,7 @@
   --color-gray: rgba(18, 18, 18, 0.5);
   --color-gray-light: #F6FAFB;
   --color-primary: #4957D4;
+  --color-secondary: #cc2230;
 }
 
 html {
@@ -36,6 +37,10 @@ main {
     margin: 0 auto;
     max-width: 1100px;
   }
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.5px;
 }
 
 a {
