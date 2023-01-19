@@ -21,7 +21,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         ${features({
             title: "Back-end Skills",
             text: "We understand that recruitment of high-caliber developers in LatAm is a challenge for US companies, so we cover everything from the sourcing process to background checks.",
-            image: "/teammates.svg",
+            image: "/globe-map.svg",
             reverse: true,
             list: [
                 "NEVER send a candidate before validating their <b>tech, communication, and culture</b>",
@@ -45,7 +45,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         ${features({
             title: "Infosec",
             text: "We understand that recruitment of high-caliber developers in LatAm is a challenge for US companies, so we cover everything from the sourcing process to background checks.",
-            image: "/teammates.svg",
+            image: "/globe-map.svg",
             reverse: true,
             list: [
                 "NEVER send a candidate before validating their <b>tech, communication, and culture</b>",
