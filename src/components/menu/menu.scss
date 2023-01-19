@@ -1,7 +1,43 @@
 .menu {
-  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 
-  @include media("<tablet") {
-    background-color: pink;
+  &-logo {
+    position: relative;
+    flex: 1;
+
+    span {
+      position: absolute;
+      top: 25px;
+      left: 28px;
+      padding-right: 10px;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: 0;
+      background-color: var(--color-gray-light);
+      border-radius: 30px;
+    }
+
+    img {
+      width: 110px;
+      margin-left: 10px;
+    }
+  }
+
+  &-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-gray);
+
+    &:hover,
+    &__active {
+      color: var(--color-purple);
+    }
   }
 }

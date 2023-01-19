@@ -5,18 +5,31 @@
   font-weight: 400;
 
   color-scheme: light;
-  color: #121212;
-  background-color: #F6FAFB;
+  color: #121212;;
+  background-color: var(--color-gray-light);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --color-gray: rgba(18, 18, 18, 0.5);
+  --color-gray-light: #F6FAFB;
+  --color-purple: #4957D4;
 }
 
-.main {
-  display: flex;
-  margin: 0 auto;
-  max-width: 1280px;
+main {
+  display: none;
+
+  @include media(">desktop") {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
