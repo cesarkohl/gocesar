@@ -1,5 +1,6 @@
 import {menu} from './components/menu/menu';
 import {features} from './components/features/features';
+import {footer} from './components/footer/footer';
 import './main.scss';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -53,5 +54,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 "NEVER send a candidate before validating their <b>tech, communication, and culture</b>",
             ],
         })}
+        
+        ${footer}
     </main>
 `;
