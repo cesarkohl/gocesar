@@ -2,7 +2,7 @@ import './menu.scss';
 
 export const menu = `
 <div class="menu">
-    <a class="menu__logo">
+    <a class="menu__logo" href="https://www.linkedin.com/in/cesarkohl" target="_blank">
         <span>GoCesar</span>
         <img src="/logo.png" class="logo" alt="GoGloby logo" />
     </a>
