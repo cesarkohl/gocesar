@@ -1,5 +1,6 @@
 import {menu, toggleActive as menuToggleActive} from './components/menu/menu';
 import {features} from './components/features/features';
+import {testimonials} from "./components/testimonials/testimonials";
 import {footer, goToTop as footerGoToTop} from './components/footer/footer';
 import './main.scss';
 
@@ -14,6 +15,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             image: "/photo-cesar.png",
             imageBorder: true,
         })}
+        
+        ${testimonials}
 
         ${features({
             id: "frontend",
