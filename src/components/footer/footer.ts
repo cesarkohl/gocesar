@@ -12,17 +12,15 @@ export const footer = `
         <a href="https://twitter.com/cesar_kohl/" target="_blank">
             <img src="./icon-twitter.svg" alt="Twitter">
         </a>
-        <a class="footer__go-top" href="#">
+        <a class="footer__go-top">
             Go top
             <img class="footer__arrow" src="./arrow-top.svg" alt="Teammates">
         </a>
     </footer>
 `;
 
-document.querySelector('a')?.addEventListener('click', () => {
-    alert('here');
-})
-
-// function goToTop() {
-//     window.scrollTo({top: 0, behavior: 'smooth'});
-// }
+export function goToTop() {
+    document.querySelector('.footer__go-top')?.addEventListener('click', () => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+}

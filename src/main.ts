@@ -1,6 +1,6 @@
 import {menu} from './components/menu/menu';
 import {features} from './components/features/features';
-import {footer} from './components/footer/footer';
+import {footer, goToTop as footerGoToTop} from './components/footer/footer';
 import './main.scss';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -58,3 +58,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         ${footer}
     </main>
 `;
+
+footerGoToTop();
