@@ -1,4 +1,5 @@
 import {menu, toggleActive as menuToggleActive} from './components/menu/menu';
+import { headline } from './components/headline/headline';
 import {features} from './components/features/features';
 import {testimonials} from "./components/testimonials/testimonials";
 import {contact} from "./components/contact/contact";
@@ -8,6 +9,8 @@ import './main.scss';
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <main>
         ${menu}
+        
+        ${headline}
         
         ${features({
             id: "about-me",
