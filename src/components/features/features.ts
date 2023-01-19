@@ -2,9 +2,11 @@ import './features.scss';
 import { tag } from "../tag/tag";
 
 interface Props {
+    id: string;
     title: string;
     text: string;
     image: string;
+    imageBorder?: boolean;
     reverse?: boolean;
     tags?: {
         label: string;
@@ -15,7 +17,7 @@ interface Props {
 
 export function features(props: Props): string {
     return `
-        <section class="features ${props.reverse ? 'features--reverse' : ''}">
+        <section id="${props.id}" class="features ${props.reverse ? 'features--reverse' : ''}">
             <div class="features__text">
                 <h2>${props.title}</h2>
                 <p>${props.text}</p>
@@ -26,7 +28,7 @@ export function features(props: Props): string {
                     ${props.list?.length ? props.list.map(li => `<li>${li}</li>`).join('') : ''}
                 </ul>
             </div>
-            <img class="features__img" src="${props.image}" alt="Teammates">
+            <img class="features__img ${props.imageBorder ? 'features__img--border' : ''}" src="${props.image}" alt="Teammates">
         </section>
     `;
 }

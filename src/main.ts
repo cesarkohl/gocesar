@@ -1,4 +1,4 @@
-import {menu} from './components/menu/menu';
+import {menu, toggleActive as menuToggleActive} from './components/menu/menu';
 import {features} from './components/features/features';
 import {footer, goToTop as footerGoToTop} from './components/footer/footer';
 import './main.scss';
@@ -8,9 +8,19 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         ${menu}
         
         ${features({
-            title: "Front-end Skills",
+            id: "about-me",
+            title: "About Me",
+            text: "We understand that recruitment of high-caliber developers in LatAm is a challenge for US companies, so we cover everything from the sourcing process to background checks.",
+            image: "/photo-cesar.png",
+            imageBorder: true,
+        })}
+
+        ${features({
+            id: "frontend",
+            title: "Front-end",
             text: "We understand that recruitment of high-caliber developers in LatAm is a challenge for US companies, so we cover everything from the sourcing process to background checks.",
             image: "/teammates.svg",
+            reverse: true,
             tags: [
                 {label: "No Irrelevant Candidates"},
                 {label: "Deeply-Vetted Developers"},
@@ -20,10 +30,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         })}
         
         ${features({
-            title: "Back-end Skills",
+            id: "backend",
+            title: "Back-end",
             text: "We understand that recruitment of high-caliber developers in LatAm is a challenge for US companies, so we cover everything from the sourcing process to background checks.",
             image: "/globe-map.svg",
-            reverse: true,
             list: [
                 "NEVER send a candidate before validating their <b>tech, communication, and culture</b>",
                 "NEVER send a candidate before validating their <b>tech, communication, and culture</b>",
@@ -32,9 +42,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         })}
         
         ${features({
+            id: "devops",
             title: "DevOps",
             text: "We understand that recruitment of high-caliber developers in LatAm is a challenge for US companies, so we cover everything from the sourcing process to background checks.",
             image: "/teammates.svg",
+            reverse: true,
             tags: [
                 {label: "No Irrelevant Candidates"},
                 {label: "Deeply-Vetted Developers"},
@@ -44,10 +56,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         })}
                 
         ${features({
+            id: "infosec",
             title: "Infosec",
             text: "We understand that recruitment of high-caliber developers in LatAm is a challenge for US companies, so we cover everything from the sourcing process to background checks.",
             image: "/globe-map.svg",
-            reverse: true,
             list: [
                 "NEVER send a candidate before validating their <b>tech, communication, and culture</b>",
                 "NEVER send a candidate before validating their <b>tech, communication, and culture</b>",
@@ -59,4 +71,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </main>
 `;
 
+menuToggleActive();
 footerGoToTop();
