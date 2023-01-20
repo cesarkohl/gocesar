@@ -73,12 +73,13 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 {label: "MongoDB"},
                 {label: "Sentry"},
                 {label: "Bugsnag"},
+                {label: "UML"},
             ],
             list: [
+                "Design Patterns",
                 "Driven Domain Design",
                 "MVC / MTV",
-                "RESTful APIs",
-                "Secure systems",
+                "Service-Oriented Architecture: RESTful APIs",
                 "Interest over different typing disciplines",
             ],
         })}
