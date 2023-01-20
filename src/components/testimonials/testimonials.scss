@@ -14,5 +14,11 @@
       display: flex;
       gap: 50px;
     }
+
+    & > * {
+      @include media('>tablet') {
+        width: 50%;
+      }
+    }
   }
 }

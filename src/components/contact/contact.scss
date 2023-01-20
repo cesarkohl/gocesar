@@ -20,4 +20,12 @@
     display: block;
     letter-spacing: -0.5px;
   }
+
+  &__link {
+    margin-top: 30px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
