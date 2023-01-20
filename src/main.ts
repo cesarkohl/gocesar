@@ -80,7 +80,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 "Driven Domain Design",
                 "MVC / MTV",
                 "Service-Oriented Architecture: RESTful APIs",
-                "Secure systems",
                 "Interest over different typing disciplines",
             ],
         })}
