@@ -4,20 +4,20 @@ import './testimonials.scss';
 export const testimonials = `
     <section class="testimonials">
         <h2 class="testimonials__heading">Managers ❤️ Cesar</h2>
-        <p class="testimonials__text">Check testimonials from managers who trust him</p>
+        <p class="testimonials__text">Check testimonials from managers who trust me.</p>
         
         <div class="testimonials__list">
             ${testimonial({
-                text: "GoGloby, has been a tremendous partner for us to scale our engineering org quickly. With GoGloby, we were able to hire several high-quality JS engineers in half of the time it took us to get to a final round offer with one candidate! I would absolutely recommend them for anyone looking to build a high-quality, global workforce.",
-                authorPhoto: "./testimonial-1-photo.jpeg",
-                authorName: "Max Klein",
-                authorRole: "Co-Founder & CEO, OttoPay",
+                text: "Cesar is a uniquely talented young individual. He is very up-to-date about modern business practices and productivity methods. Cesar has lots of energy and dedicates all of it to researching, learning and applying new perspectives to the company.",
+                authorPhoto: "./photo-joao.jpg",
+                authorName: "João del Valle",
+                authorRole: "Co-Founder & CEO, EBANX",
             })}
             ${testimonial({
-                text: "GoGloby, has been a tremendous partner for us to scale our engineering org quickly. With GoGloby, we were able to hire several high-quality JS engineers in half of the time it took us to get to a final round offer with one candidate! I would absolutely recommend them for anyone looking to build a high-quality, global workforce.",
-                authorPhoto: "./testimonial-1-photo.jpeg",
-                authorName: "Max Klein",
-                authorRole: "Co-Founder & CEO, OttoPay",
+                text: "I firmly believe guys like Cesar are few and far between. He is a critical thinker, thoughtful developer and great communicator!",
+                authorPhoto: "./photo-brian.jpg",
+                authorName: "Brian Webb",
+                authorRole: "Co-Founder & CTO, Voxie",
                 quotationMark: true,
             })}
         </div>
